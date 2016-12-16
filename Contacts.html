@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+	<div class="header">
+	<div class="titleim">
+		<img src="https://openclipart.org/image/2400px/svg_to_png/231633/Colorful-Circle-Fractal.png" width=50 height=50 hspace=10  align=left/>
+	</div>
+	<div class="title">
+		<h1>Title</h1>
+	</div>
+	<div class="reg">
+		Register/Sign in
+	</div>
+	</div>
+	<div class="nav clearfix">
+	<ul class="clearfix">
+	<li>
+		<a href=""><h4>Home</h4></a>
+	</li>
+	<li>
+		<a href=""><h4>News</h4></a>
+		<ul>
+			<li><a href="">Category 1</a></li>
+			<li><a href="">Category 2</a></li>
+			<li><a href="">Category 3</a></li>
+			<li><a href="">Category 4</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href=""><h4>Contacts</h4></a>
+	</li>
+	</ul>
+	</div>
+	<div class="content">
+	 	<div id="map">
+	 	</div>
+		<p>
+		Red is the color at the longer-wavelengths end of the spectrum of visible light next to orange, at the opposite end from violet. Red color has a predominant light wavelength of roughly 620–740 nanometers. Light with a longer wavelength than red but shorter than terahertz radiation and microwave is called infrared.</p>
+
+	</div>
+	<div class="sidebar">
+	<form method="get" action="smth.php">
+	<p><label for="login">Login</label><br>
+		<input type="text" value="" name="login"/>
+	</p>
+	<p> <label for="subject">Subject</label><br>
+		<input type="text" value="" name="subject"/>
+	</p>
+	<p> <label for="comment">Comment</label><br>
+		<input type="textarea" value="" name="comment"/>
+	</p>
+	<p>
+		<input type="radio" name="gender" value="W" /><label>W</label>
+		<br>
+		<input type="radio" name="gender" value="W" /><label>M</label>
+	</p>
+	<p>
+		<input type="checkbox" name="some" value="answer 1" /><label >answer 1</label>
+		<br>
+		<input type="checkbox" name="some" value="answer 2" /><label >answer 2</label>
+		<br>
+		<input type="checkbox" name="some" value="answer 3" /><label >answer 3</label>
+	</p>
+	<p>
+		<input type="file" name="f1"/>
+	</p>
+	<p>
+		<input type="date" value="" name="date1"/>
+	</p>
+	<p>
+		<input type="submit" name="submit" value="send"/>
+	</p>
+	</form>
+	</div>
+	<script>
+      function initMap() {
+        var uluru = {lat: 49.993500, lng: 36.230383};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcqt088ZNaengMnfTifVpWkRpTAbEwTbU&callback=initMap">
+    </script>
+
+	</body>
+
+</html>
